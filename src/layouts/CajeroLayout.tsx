@@ -1,12 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom'
 
 type Props = {}
 
 const CajeroLayout = (props: Props) => {
   return (
     <div>
-        CajeroLayout
-        <Outlet />
+      CajeroLayout
+      <Outlet />
     </div>
   )
 }

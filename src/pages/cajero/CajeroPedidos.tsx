@@ -3,9 +3,7 @@ import React from 'react'
 type Props = {}
 
 const CajeroPedidos = (props: Props) => {
-  return (
-    <div>CajeroPedidos</div>
-  )
+  return <div>CajeroPedidos</div>
 }
 
 export default CajeroPedidos

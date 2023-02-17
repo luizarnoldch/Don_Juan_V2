@@ -1,7 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 /**Home */
 import Home from '@/pages/Home'
@@ -26,7 +23,7 @@ import MeseroCompras from './pages/mesero/MeseroCompras'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
+    element: <Home />,
   },
   {
     path: '/admin',
@@ -42,21 +39,21 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/cajero',
-        element: <CajeroHome />
+        element: <CajeroHome />,
       },
       {
         path: '/cajero/pedidos',
-        element: <CajeroPedidos />
+        element: <CajeroPedidos />,
       },
       {
         path: '/cajero/productos',
-        element: <CajeroProductos />
+        element: <CajeroProductos />,
       },
       {
         path: '/cajero/compras',
-        element: <CajeroCompras />
-      }
-    ]
+        element: <CajeroCompras />,
+      },
+    ],
   },
   {
     path: '/mesero',
@@ -64,24 +61,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/mesero',
-        element: <MeseroHome />
+        element: <MeseroHome />,
       },
       {
         path: '/mesero/pedidos',
-        element: <MeseroPedidos />
+        element: <MeseroPedidos />,
       },
       {
         path: '/mesero/compras',
-        element: <MeseroCompras />
-      }
-    ]
-  }
+        element: <MeseroCompras />,
+      },
+    ],
+  },
 ])
 
 function App() {
-  return (
-    <RouterProvider  router={router}/>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
